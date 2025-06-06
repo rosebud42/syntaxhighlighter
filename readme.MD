@@ -1,6 +1,6 @@
 **Gerçek Zamanlı Tokenize ve Renklendirme**
 
-[Uygulama videosunu izlemek için tıklayın!](https://youtu.be/8P-NLqN5gmg)
+[Uygulama videosuna bu bağlantıdan ulaşabilirsiniz.](https://youtu.be/8P-NLqN5gmg)
 
 
 Python Tkinter ile Etkileşimli Bir Arayüz Tasarımı
@@ -253,7 +253,7 @@ yapı sadece görsel anlamda kodu okunabilir kılmakla kalmamış, aynı
 zamanda hatalı yazımları ayırt edebilme açısından da kullanıcıya destek
 sunmuştur.
 
-Nesneye yönelik yapısı sayesinde geliştirilmeye açık olan bu projen
+Nesneye yönelik yapısı sayesinde geliştirilmeye açık olan bu proje
 detaylı gramer kurallarını içermiyor olsa da kolay bir şekilde
 geliştirilebilir.
 
