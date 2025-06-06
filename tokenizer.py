@@ -87,7 +87,7 @@ class Tokenizer:
                     i += 1
                 number_value = code[first:i]
 
-                # '.' ile başlıyorsa veya bitiyorsa, bu geçersiz bir float olabilir
+                
                 if number_value.startswith('.') or number_value.endswith('.'):
                     error = Error(f"Geçersiz sayı formatı: {number_value}", current_line)
                     raise SyntaxError(error)
