@@ -1,6 +1,8 @@
 **Gerçek Zamanlı Tokenize ve Renklendirme**
 
-[Uygulama videosunu izlemek için tıklayın](https://youtu.be/8P-NLqN5gmg)
+[Uygulama videosunu izlemek için tıklayın!](https://youtu.be/8P-NLqN5gmg)
+
+
 Python Tkinter ile Etkileşimli Bir Arayüz Tasarımı
 
 1.  **Özet**
