@@ -1,5 +1,6 @@
 **Gerçek Zamanlı Tokenize ve Renklendirme**
 
+[Uygulama videosunu izlemek için tıklayın](https://youtu.be/8P-NLqN5gmg)
 Python Tkinter ile Etkileşimli Bir Arayüz Tasarımı
 
 1.  **Özet**
@@ -257,5 +258,7 @@ geliştirilebilir.
 Bu proje, sözdizimi renklendirme gibi basit görünen ancak geliştirici
 deneyimini büyük ölçüde etkileyen bir konunun ardındaki temel yapıyı
 anlamak adına önemli bir uygulama olarak değerlendirilmiştir.
+
+
 
 > Efekan Aksoy
