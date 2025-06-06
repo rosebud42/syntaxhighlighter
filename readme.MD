@@ -37,24 +37,24 @@ kodun gramer açısından geçerliliğini test edebilir.
 
 3.  **Yöntem**
 
-    1.  **Lexical Analyzer**
+    3.1.  **Lexical Analyzer**
 
-> Bu projede sözcüksel çözümleyici, \"State Diagram & Program
-> Implementation\" yöntemine dayanmaktadır. Yani, her bir karakter elle
-> kontrol edilerek durumlara göre token oluşturulmaktadır. re (regular
-> expressions) kullanılmamıştır. Her karakter sırasıyla analiz edilmekte
-> ve belirli bir kurala göre token\'lara ayrılmaktadır. Bu, duruma
-> dayalı (state-based) bir kontrol yapısı ile programlama mantığı
-> birleştirilerek uygulanmıştır.
+    > Bu projede sözcüksel çözümleyici, \"State Diagram & Program
+    > Implementation\" yöntemine dayanmaktadır. Yani, her bir karakter elle
+    > kontrol edilerek durumlara göre token oluşturulmaktadır. re (regular
+    > expressions) kullanılmamıştır. Her karakter sırasıyla analiz edilmekte
+    > ve belirli bir kurala göre token\'lara ayrılmaktadır. Bu, duruma
+    > dayalı (state-based) bir kontrol yapısı ile programlama mantığı
+    > birleştirilerek uygulanmıştır.
 
-2.  **Syntax Analyzer**
+    3.2.  **Syntax Analyzer**
 
-> Sözdizimsel çözümleme işlemi, Top-Down yaklaşımı ile yapılmaktadır. Bu
-> yaklaşımda, dilin gramerine uygun olarak parse tree\'nin (ağaç
-> yapısının) kökünden başlanarak dallara doğru inilir. Recursive descent
-> parser yapısı kullanılmıştır. Her bir kural için ayrı bir fonksiyon
-> tanımlanmış ve bu fonksiyonlar birbirini çağırarak girintili
-> (recursive) bir yapı kurmuştur.
+    > Sözdizimsel çözümleme işlemi, Top-Down yaklaşımı ile yapılmaktadır. Bu
+    > yaklaşımda, dilin gramerine uygun olarak parse tree\'nin (ağaç
+    > yapısının) kökünden başlanarak dallara doğru inilir. Recursive descent
+    > parser yapısı kullanılmıştır. Her bir kural için ayrı bir fonksiyon
+    > tanımlanmış ve bu fonksiyonlar birbirini çağırarak girintili
+    > (recursive) bir yapı kurmuştur.
 
 Proje, nesneye yönelik programlama ilkeleri esas alınarak
 geliştirilmiştir. Kod yapısı, görevlerin sınıflar arasında ayrılarak
@@ -62,12 +62,12 @@ modüler ve sürdürülebilir hale getirilmesini hedeflemiştir. Bu
 doğrultuda sistemin farklı bileşenlerini yöneten beş temel sınıf
 oluşturulmuştur:
 
-[*Token*, *Tokenizer*, *Error*, *Parser* ve *RealTimeIDE*.]{.mark}
+[*Token*, *Tokenizer*, *Error*, *Parser* ve *RealTimeIDE*.]
 
 Her sınıf kendi içinde belirli bir sorumluluğu yerine getirmekte,
 böylece kodun okunabilirliği ve geliştirilebilirliği artırılmaktadır.
 
-3.  **Token Class**
+3.3.  **Token Class**
 
 > Token sınıfı, sözcüksel analiz sürecinde tanımlanan her bir dil
 > birimini temsil eder. Her token; türü (type), değeri (value) ve konumu
@@ -75,7 +75,7 @@ böylece kodun okunabilirliği ve geliştirilebilirliği artırılmaktadır.
 > bileşenlerin anlamlı ve yapılandırılmış veri ile çalışabilmesini
 > sağlar.
 
-4.  **Tokenizer Class**
+3.4.  **Tokenizer Class**
 
 > Tokenizer sınıfı, giriş olarak verilen metni analiz ederek
 > karakterleri anlamlı parçalara (token\'lara) ayırır. re gibi hazır
@@ -86,38 +86,38 @@ böylece kodun okunabilirliği ve geliştirilebilirliği artırılmaktadır.
 >
 > **Tokenizer.tokenize fonksiyonuna dahil edilen tokenler:**
 >
-> *[COMMENT]{.mark} :* \# karakteriyle başlayan ve satır sonuna kadar
+> *[COMMENT] :* \# karakteriyle başlayan ve satır sonuna kadar
 > devam eden yorum satırlarını temsil eder. Bu token parse edilmez.
 >
-> *[KEYWORD]{.mark} :* Tanımlı anahtar kelimelerdir. if, else, while
+> *[KEYWORD] :* Tanımlı anahtar kelimelerdir. if, else, while
 > gibi özel anlamlı kelimeler bu kategoriye girer.
 >
-> *[BOOLEAN]{.mark} :* True ve False kelimeleri için kullanılır.
+> *[BOOLEAN]:* True ve False kelimeleri için kullanılır.
 >
-> *[IDENTIFIER]{.mark} :* Değişken, fonksiyon adı gibi kullanıcı tanımlı
+> *[IDENTIFIER] :* Değişken, fonksiyon adı gibi kullanıcı tanımlı
 > isimlerdir. Harf veya \_ karakteriyle başlar, devamında rakam da
 > olabilir.
 >
-> *[NUMBER]{.mark} :* Sadece rakamlardan oluşan tam sayıları ifade eder.
+> *[NUMBER] :* Sadece rakamlardan oluşan tam sayıları ifade eder.
 >
-> *[FLOAT]{.mark} :* Ondalıklı sayıları ifade eder.
+> *[FLOAT] :* Ondalıklı sayıları ifade eder.
 >
 > *[EQEQUAL (==), NOTEQUAL (!=), LESSEQUAL (\<=), LESS (\<),
-> GREATEREQUAL (\>=),]{.mark} [GREATER (\>)]{.mark} :* Karşılaştırma
+> GREATEREQUAL (\>=),] [GREATER (\>)] :* Karşılaştırma
 > operatörleri
 >
-> *[PLUS (+), MINUS (-), MULTIPLY (\*), DIVIDE (/), EQUALS (=)]{.mark}:*
+> *[PLUS (+), MINUS (-), MULTIPLY (\*), DIVIDE (/), EQUALS (=)]:*
 > Aritmetik operatörler
 >
 > *[LPAREN ((), RPAREN ()), LBRACKET (\[), RBRACKET (\]), COLON (:),
-> COMMA (,)]{.mark} :* Parentez, virgül vs. ifadeler.
+> COMMA (,)] :* Parentez, virgül vs. ifadeler.
 >
-> *[STRING]{.mark} :* Çift tırnak içine alınmış metinleri temsil eder.
+> *[STRING] :* Çift tırnak içine alınmış metinleri temsil eder.
 >
-> *[NEWLINE]{.mark} :* Yeni satır karakterini (\n) temsil eder. Satır
+> *[NEWLINE] :* Yeni satır karakterini (\n) temsil eder. Satır
 > satır analiz sağlar.
 
-5.  **Error Class**
+3.5.  **Error Class**
 
 > Error sınıfı, sistemin çalışması sırasında oluşabilecek hataları
 > yönetmek üzere tasarlanmıştır. Tokenizer ya da Parser tarafından
@@ -125,7 +125,7 @@ böylece kodun okunabilirliği ve geliştirilebilirliği artırılmaktadır.
 > raporlanır. Hata mesajlarında ilgili satır bilgileri verilerek
 > kullanıcıya doğru yönlendirme sağlanır.
 
-6.  **Parser Class**
+3.6.  **Parser Class**
 
 > Parser sınıfı, Tokenizer tarafından üretilen token listesini
 > kullanarak, dilin gramerine uygun bir sözdizimsel analiz
@@ -209,12 +209,12 @@ böylece kodun okunabilirliği ve geliştirilebilirliği artırılmaktadır.
 >
 > Fonksiyonlara gönderilen argümanlardır. Şunlar olabilir:
 >
-> [NUMBER , FLOAT , STRING , BOOLEAN , IDENTIFIER]{.mark}
+> [NUMBER , FLOAT , STRING , BOOLEAN , IDENTIFIER]
 >
 > **expression**
 >
 > Her türlü ifadeyi içerir. Genellikle aritmetik ya da karşılaştırma
-> içerir. Yani [comparison_expression()]{.mark} fonksiyonuna
+> içerir. Yani [comparison_expression()] fonksiyonuna
 > yönlendirir.
 >
 > **comparison_expression**
@@ -227,7 +227,7 @@ böylece kodun okunabilirliği ve geliştirilebilirliği artırılmaktadır.
 >
 > Temel aritmetik işlemler içindir. İşlem önceliği çarpma ve bölmededir.
 
-7.  **RealTimeIDE Class**
+3.7.  **RealTimeIDE Class**
 
 > RealTimeIDE sınıfı, kullanıcı arayüzü ile diğer bileşenler arasındaki
 > etkileşimi yönetir. Kullanıcıdan alınan kaynak kodu Tokenizer ve
