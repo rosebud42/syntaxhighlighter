@@ -139,8 +139,7 @@ böylece kodun okunabilirliği ve geliştirilebilirliği artırılmaktadır.
 > \# karakteri ile başlayan ve satır sonuna kadar devam eden yorum
 > satırlarıdır. Parser tarafından atlanır, işlenmez.
 >
-> ![](media/image1.png){width="6.531944444444444in"
-> height="0.38680555555555557in"}
+> (media/image1.png)
 >
 > **statement_list fonksiyonu**
 >
@@ -157,66 +156,51 @@ böylece kodun okunabilirliği ve geliştirilebilirliği artırılmaktadır.
 >
 > Bir değişkene değer atar. Bu değer string, float, number vs. olabilir.
 >
-> ![](media/image2.png){width="6.531944444444444in"
-> height="0.6347222222222222in"}
+> (media/image2.png)
 >
 > **if_statement**
 >
 > Koşullu ifade.
 >
-> ![ekran görüntüsü, metin, yazılım, multimedya yazılımı içeren bir
-> resim Yapay zeka tarafından oluşturulmuş içerik yanlış
-> olabilir.](media/image3.png){width="6.531944444444444in"
-> height="1.0555555555555556in"}
+> (media/image3.png)
 >
 > **while_statement**
 >
 > Koşullu döngü yapısı.
 >
-> ![ekran görüntüsü, metin içeren bir resim Yapay zeka tarafından
-> oluşturulmuş içerik yanlış
-> olabilir.](media/image4.png){width="6.531944444444444in"
-> height="0.8472222222222222in"}
+> !(media/image4.png)
 >
 > **for_statement**
 >
 > For döngüsü. Python dilindeki gibi liste iterasyonu ve range desteği
 > sağlanmaktadır.
 >
-> ![ekran görüntüsü, metin içeren bir resim Yapay zeka tarafından
-> oluşturulmuş içerik yanlış
-> olabilir.](media/image5.png){width="6.531944444444444in"
-> height="0.8625in"}
+> (media/image5.png)
 >
 > **switch_statement**
 >
 > Python'da olmayan ve ekstra olarak eklenen switch yapısı. Python
 > dilinin bir eksiği olarak değerlendirildiği için eklendi.
 >
-> ![metin, ekran görüntüsü içeren bir resim Yapay zeka tarafından
-> oluşturulmuş içerik yanlış
-> olabilir.](media/image6.png){width="6.531944444444444in"
-> height="1.1368055555555556in"}
+> (media/image6.png)
 >
 > **def_statement**
 >
 > Fonksiyon tanımı.
 >
-> ![](media/image7.png){width="6.531944444444444in" height="0.38125in"}
+> (media/image7.png)
 >
 > **func_call_statement**
 >
 > Fonksiyon çağrısı.
 >
-> ![](media/image8.png){width="6.531944444444444in"
-> height="0.24583333333333332in"}
+> (media/image8.png)
 >
 > **list_literal**
 >
 > Köşeli parantezlerle tanımlanmış liste yapısı.
 >
-> ![](media/image9.png){width="6.531944444444444in"
-> height="0.2972222222222222in"}
+> (media/image9.png)
 >
 > **argument**
 >
@@ -234,8 +218,7 @@ böylece kodun okunabilirliği ve geliştirilebilirliği artırılmaktadır.
 >
 > Karşılaştırma operatörleri içeren ifadeler.
 >
-> ![](media/image10.png){width="6.531944444444444in"
-> height="0.39652777777777776in"}
+> (media/image10.png)
 >
 > **arith_expression, term ve factor**
 >
@@ -252,17 +235,11 @@ böylece kodun okunabilirliği ve geliştirilebilirliği artırılmaktadır.
 >
 > **IDE'nin genel görüntüsü :**
 >
-> ![metin, ekran görüntüsü, yazılım, bilgisayar simgesi içeren bir resim
-> Yapay zeka tarafından oluşturulmuş içerik yanlış
-> olabilir.](media/image11.png){width="6.531944444444444in"
-> height="4.4375in"}
+> (media/image11.png)
 >
 > Parse edildikten sonra hatalı satırların gösterimi
 >
-> ![metin, ekran görüntüsü, yazılım, yazı tipi içeren bir resim Yapay
-> zeka tarafından oluşturulmuş içerik yanlış
-> olabilir.](media/image12.png){width="5.809426946631671in"
-> height="1.2235247156605424in"}
+> (media/image12.png)
 
 4.  **Sonuç**
 
