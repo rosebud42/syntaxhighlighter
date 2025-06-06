@@ -139,7 +139,7 @@ böylece kodun okunabilirliği ve geliştirilebilirliği artırılmaktadır.
 > \# karakteri ile başlayan ve satır sonuna kadar devam eden yorum
 > satırlarıdır. Parser tarafından atlanır, işlenmez.
 >
-> (media/image1.png)
+> ![resim1](media/image1.png)
 >
 > **statement_list fonksiyonu**
 >
@@ -156,51 +156,51 @@ böylece kodun okunabilirliği ve geliştirilebilirliği artırılmaktadır.
 >
 > Bir değişkene değer atar. Bu değer string, float, number vs. olabilir.
 >
-> (media/image2.png)
+> ![resim2](media/image2.png)
 >
 > **if_statement**
 >
 > Koşullu ifade.
 >
-> (media/image3.png)
+> ![resim3](media/image3.png)
 >
 > **while_statement**
 >
 > Koşullu döngü yapısı.
 >
-> !(media/image4.png)
+> ![resim4](media/image4.png)
 >
 > **for_statement**
 >
 > For döngüsü. Python dilindeki gibi liste iterasyonu ve range desteği
 > sağlanmaktadır.
 >
-> (media/image5.png)
+> ![resim5](media/image5.png)
 >
 > **switch_statement**
 >
 > Python'da olmayan ve ekstra olarak eklenen switch yapısı. Python
 > dilinin bir eksiği olarak değerlendirildiği için eklendi.
 >
-> (media/image6.png)
+> ![resim6](media/image6.png)
 >
 > **def_statement**
 >
 > Fonksiyon tanımı.
 >
-> (media/image7.png)
+> ![resim7](media/image7.png)
 >
 > **func_call_statement**
 >
 > Fonksiyon çağrısı.
 >
-> (media/image8.png)
+> ![resim8](media/image8.png)
 >
 > **list_literal**
 >
 > Köşeli parantezlerle tanımlanmış liste yapısı.
 >
-> (media/image9.png)
+> ![resim9](media/image9.png)
 >
 > **argument**
 >
@@ -218,7 +218,7 @@ böylece kodun okunabilirliği ve geliştirilebilirliği artırılmaktadır.
 >
 > Karşılaştırma operatörleri içeren ifadeler.
 >
-> (media/image10.png)
+> ![resim10](media/image10.png)
 >
 > **arith_expression, term ve factor**
 >
@@ -235,11 +235,11 @@ böylece kodun okunabilirliği ve geliştirilebilirliği artırılmaktadır.
 >
 > **IDE'nin genel görüntüsü :**
 >
-> (media/image11.png)
+> ![resim11](media/image11.png)
 >
 > Parse edildikten sonra hatalı satırların gösterimi
 >
-> (media/image12.png)
+> ![resim12](media/image12.png)
 
 4.  **Sonuç**
 
