@@ -2,6 +2,8 @@
 
 [Uygulama videosuna bu bağlantıdan ulaşabilirsiniz.](https://youtu.be/8P-NLqN5gmg)
 
+[Proje için yazılan makaleye bu bağlantıdan ulaşabilirsiniz.](https://medium.com/@efekanaksoy35/python-ile-real-time-syntax-highlighter-9227eeff928e)
+
 
 Python Tkinter ile Etkileşimli Bir Arayüz Tasarımı
 
